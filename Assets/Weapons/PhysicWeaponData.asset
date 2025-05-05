@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WeaponIcon: {fileID: 21300000, guid: b511ce4ce8add3b498292308c99cfec3, type: 3}
   BulletPrefab: {fileID: 8038565632000933294, guid: f40ee2ac1a933a84ea0af61ede77e28c, type: 3}
-  Speed: 10
+  Speed: 11
   IsWeaponWithCharging: 1
