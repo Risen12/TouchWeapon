@@ -14,6 +14,16 @@ public class PhysicBullet : Bullet
         _powerOfShot = 0f;
     }
 
+    private void Update()
+    {
+        Vector2 velocity = _rigidbody2D.linearVelocity;
+
+        if (velocity.sqrMagnitude > 0.01f)
+        { 
+            SetRotation(velocity);
+        }
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if ((_wallLayerMask.value & (1 << collision.gameObject.layer)) != 0)
